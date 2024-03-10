@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moment 1</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <div class="navigation"></div>
+            <button class="menu-btn open" id="open-menu">
+                <span class="menu-icon">
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                </span>
+                <span class="menu-text">Meny</span>
+            </button>
+
+            <nav id="nav-menu">
+
+                <button class="menu-btn close" id="close-menu">
+                    <span class="menu-icon">
+                        <span class="bars cross1"></span>
+                        <span class="bars cross2"></span>
+                    </span>
+                    <span class="menu-text">Stäng</span>
+                </button>
+                <ul>
+                    <li><a href="index.html">Om uppgiften</a></li>
+                    <li><a href="images.html">Bilder</a></li>
+                    <li><a href="publish.html">Publicering</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="text-container">
+
+            <h1>Publicering</h1>
+
+            <p> Nedan följer de steg som tagits för att optimera och publicera webbplatsen i en automatiserad
+                webbutvecklingsmiljö.</p>
+
+            <div class="space1"></div>
+
+            <p><strong>Detta har automatiserats:</strong></p>
+
+            <div class="space2"></div>
+
+            <ul>
+                <li>Minifiering av HTML, CSS och JavaScript har gjorts med NodeJs, NPM och Parcel.</li>
+                <li>Bilderna är tagna från pexels.com och har sparats i Photoshop i formatet JPEG.
+                    I HTML-kodens picture-tagg har kod för automatiserad konvertering till WebP lagts in tillsammans med kod för ändring av bildstorlek.</li>
+                <li>Bakåtkompabilitet har ordnats med koden "browserslist" i filen "package.json".</li>
+                <li>Kopiering av arbetsfiler till mappen "dist" för publicering har gjorts med kommandot npm run start/npm run build i Visual Studio Code.</li>
+                <li>En README.md-fil har skapats tillsammans med commits i Github.</li>
+                <li>Publicering av webbplatsen har gjords med Github och Netlify.</li>
+            </ul>
+        </main>
+
+        <footer>
+            <p>Laborationsuppgift för DT211G, Moment 1<br>
+                &copy;&nbsp;Åsa Lindskog, 2024
+            </p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
